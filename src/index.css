@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #c5c5d3;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #faf8ff;
+    color: #1a1b21;
+    font-family: 'Inter', sans-serif;
+  }
+
+  button {
+    transition-property: all;
+    transition-duration: 200ms;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #1e3a8a;
+    box-shadow: 0 0 0 2px #1e3a8a;
+  }
+}
